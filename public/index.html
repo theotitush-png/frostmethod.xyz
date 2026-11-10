@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <title>Frostmethod.xyz — Video Enhancement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">❄</span><span>FROST<span class="blue">METHOD</span><small>.XYZ</small></span></a>
+    <nav><a href="#how">How it works</a><a href="#features">Features</a></nav>
+    <a class="nav-cta" href="#studio">Open studio <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> VIDEO ENHANCEMENT STUDIO</div>
+      <h1>Make every frame<br><span>feel crystal clear.</span></h1>
+      <p class="hero-copy">Give your videos a cleaner, sharper look with Frostmethod. Upload a clip, enhance it, and export your result.</p>
+      <a class="primary-btn" href="#studio">Enhance a video <span>→</span></a>
+      <div class="hero-note"><span>✦</span> Simple workflow · MP4 export · Your files stay on your server</div>
+    </section>
+
+    <section class="studio panel" id="studio">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE STUDIO</div><h2>Enhance your video</h2></div>
+        <div class="secure"><span>●</span> READY</div>
+      </div>
+      <form id="uploadForm">
+        <label class="dropzone" id="dropzone" for="videoInput">
+          <input id="videoInput" name="video" type="file" accept="video/mp4,video/quicktime,video/webm,video/x-matroska,.m4v" hidden>
+          <span class="upload-icon">↑</span>
+          <strong id="fileTitle">Drop your video here</strong>
+          <span id="fileSub">or click to browse · MP4, MOV, WebM, MKV · max 500 MB</span>
+          <span class="browse-btn">Choose video</span>
+        </label>
+        <div class="file-row" id="fileRow" hidden><span>▣ <b id="fileName"></b></span><button type="button" id="removeFile">Remove</button></div>
+        <button class="submit-btn" id="submitBtn" type="submit" disabled>Start enhancement <span>→</span></button>
+      </form>
+      <div class="status" id="status" aria-live="polite" hidden>
+        <div class="status-top"><strong id="statusTitle">Preparing your video…</strong><span id="statusText">Processing</span></div>
+        <div class="progress"><span id="progressBar"></span></div>
+        <p id="statusDetail">Keep this page open while your video is being processed.</p>
+        <a id="downloadLink" class="primary-btn download" hidden download>Download enhanced video <span>↓</span></a>
+      </div>
+      <p class="privacy">♢ Your upload is processed by this website's server. Don't upload private or sensitive videos.</p>
+    </section>
+
+    <section class="features" id="features">
+      <div class="eyebrow">BUILT FOR CLEANER PLAYBACK</div><h2>A little more clarity<br><span>in every clip.</span></h2>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">✧</div><h3>Cleaner image</h3><p>Light noise reduction helps smooth distracting grain and compression noise.</p></article>
+        <article class="feature-card"><div class="feature-icon">⌁</div><h3>Sharper details</h3><p>Careful sharpening adds definition without promising detail that isn't in the source.</p></article>
+        <article class="feature-card"><div class="feature-icon">↗</div><h3>Easy export</h3><p>Download an MP4 file that is convenient to preview and share.</p></article>
+      </div>
+    </section>
+
+    <section class="how panel" id="how"><div class="eyebrow">THREE SIMPLE STEPS</div><h2>From upload to upgrade.</h2>
+      <div class="steps"><div><b>01</b><h3>Upload</h3><p>Choose a video from your device.</p></div><div><b>02</b><h3>Enhance</h3><p>Frostmethod applies its video filters.</p></div><div><b>03</b><h3>Export</h3><p>Download your enhanced MP4.</p></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">❄</span><span>FROST<span class="blue">METHOD</span><small>.XYZ</small></span></a><span>© 2026 Frostmethod.xyz</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
